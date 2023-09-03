@@ -1,3 +1,5 @@
-const App = () => <img src='/react.svg' alt='logotipo' />;
+import UsersList from './styles/components/users/UsersList';
+
+const App = () => <UsersList />;
 
 export default App;
