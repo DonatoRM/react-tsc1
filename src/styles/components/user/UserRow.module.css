@@ -1,0 +1,63 @@
+.wrapper {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	padding: 0.5rem 1rem;
+	border-radius: 1rem;
+	box-shadow: 1px 1px 0.5rem gray;
+}
+.display {
+	width: 80%;
+	min-width: 15rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 0.15rem;
+}
+.display span:nth-child(1) {
+	font-weight: bold;
+}
+.display span:nth-child(2) {
+	font-size: 0.8rem;
+}
+.activity {
+	width: 10%;
+	min-width: 6rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+}
+.icon {
+	height: 2rem;
+	width: 2rem;
+}
+.active {
+	color: green;
+}
+.inactive {
+	color: red;
+}
+.job {
+	width: 10%;
+	min-width: 6rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.job span {
+	font-size: 0.8rem;
+	padding: 0.2rem 1rem;
+	border-radius: 1rem;
+	color: white;
+}
+.teacher {
+	background-color: red;
+}
+.student {
+	background-color: green;
+}
+.other {
+	background-color: blue;
+}
