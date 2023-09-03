@@ -1,0 +1,18 @@
+.activity {
+	width: 10%;
+	min-width: 6rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+}
+.icon {
+	height: 2rem;
+	width: 2rem;
+}
+.active {
+	color: green;
+}
+.inactive {
+	color: red;
+}
