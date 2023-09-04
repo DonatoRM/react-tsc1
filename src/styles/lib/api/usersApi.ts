@@ -1,6 +1,6 @@
-import { Users } from '../hooks/useUsers';
+import { Users } from '../reducers/usersReducer';
 
-export const findAllUsers = async (signal: AbortSignal) => {
+export const findUsers = async (signal: AbortSignal) => {
 	try {
 		const response = await fetch('http://localhost:4000/users', { signal });
 		const users: Users = (await response.json()) as Users;
