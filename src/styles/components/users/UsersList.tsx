@@ -3,12 +3,16 @@ import { useUsers } from '../../lib/hooks/useUsers';
 import style from './UsersList.module.css';
 
 const UsersList = () => {
-	const { users, loading, error } = useUsers();
+	const { data, dispatchData } = useUsers();
 
 	return (
 		<div className={style.wrapper}>
 			<h1 className={style.title}>Listado de usuarios</h1>
-			<UsersRendered users={users} loading={loading} error={error} />
+			<UsersRendered
+				users={data.users}
+				loading={data.loading}
+				error={data.error}
+			/>
 		</div>
 	);
 };
