@@ -2,8 +2,8 @@ interface CrossIconProps {
 	className: string;
 }
 
-const CrossIcon = ({ className }: CrossIconProps) => (
-	<svg className={className} viewBox='0 0 21 21' fill='currentColor'>
+const CrossIcon = (props: CrossIconProps) => (
+	<svg {...props} viewBox='0 0 21 21' fill='currentColor'>
 		<g
 			fill='none'
 			fillRule='evenodd'
