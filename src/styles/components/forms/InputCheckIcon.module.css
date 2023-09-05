@@ -1,0 +1,41 @@
+.wrapper {
+	width: fit-content;
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+.left {
+	flex-direction: row-reverse;
+}
+.right {
+	flex-direction: row;
+}
+.background {
+	position: relative;
+	height: 2rem;
+	width: 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 0.5rem;
+	box-shadow: 1px 1px 0.5rem gray;
+	transition: box-shadow 0.3s linear;
+}
+.check {
+	opacity: 0;
+	height: 100%;
+	width: 100%;
+}
+.icon {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	pointer-events: none;
+}
+.check:not(:checked) + .icon {
+	display: none;
+}
+.background:focus-within {
+	box-shadow: 1px 1px 1rem gray;
+	transition: box-shadow 0.3s linear;
+}
